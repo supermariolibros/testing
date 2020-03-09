@@ -4,7 +4,7 @@ import { basePicturesUrl } from 'core';
 import { mapFromApiToVm } from "./hotel-collection.mapper";
 
 describe('hotel collection mapper test', () => {
-    xit('it should return a View Model when a API model is introduced', () => {
+    it('it should return a View Model when a API model is introduced', () => {
         // Arrange
         const hotel: apiModel.HotelEntityApi = {
             id: "123",

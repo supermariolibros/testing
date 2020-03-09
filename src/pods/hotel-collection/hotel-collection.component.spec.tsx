@@ -4,7 +4,7 @@ import { HotelCollectionComponent } from "./hotel-collection.component";
 import { HotelEntityVm } from './hotel-collection.vm';
 import '@testing-library/jest-dom/extend-expect';
 
-describe('hotel card component test', () => {
+describe('Hotel card component test', () => {
     it('it should render all the field of an hotel', () => {
         // Arrange
         const hotel1: HotelEntityVm = {

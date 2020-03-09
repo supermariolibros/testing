@@ -1,7 +1,7 @@
 import { mapToCollection } from "./collection.mapper";
 
 describe('collection mapper test', () => {
-    xit('it should return the transformation of a collection with the given function', () => {
+    it('it should return the transformation of a collection with the given function', () => {
         // Arrange
         const collectionA = [1,2,3,4];
         const expectedResult = [2,4,6,8];
@@ -11,7 +11,8 @@ describe('collection mapper test', () => {
         // Assert
         expect(result).toEqual(expectedResult)
     });
-    xit('it should return empty if a not colletion is introduced as a paramn', () => {
+    
+    it('it should return empty if a not colletion is introduced as a paramn', () => {
        // Arrange
        const collectionA = undefined;
        const expectedResult = [];

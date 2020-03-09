@@ -6,7 +6,7 @@ import * as viewModel from './hotel-collection.vm';
 import * as api from './hotel-collection.api';
 
 describe('hotel-collection test', () => {
-    xit('When it is render the first time hotelCollection is empty', () => {
+    it('When it is render the first time hotelCollection is empty', () => {
         // Act
         const { result } = renderHook(() => useHotelCollection());
         
@@ -15,7 +15,7 @@ describe('hotel-collection test', () => {
  
     });
 
-    xit('description',  async () => {
+    it('description',  async () => {
         // Arrange
         const hotel: apiModel.HotelEntityApi = {
             id: "123",

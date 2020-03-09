@@ -4,8 +4,8 @@ import { TextField } from "./text-field";
 import { FieldRenderProps, FieldInputProps } from 'react-final-form';
 
 
-describe('text-field component spec', () => {
-    xit('should display the component', () => {
+describe('text-field component test', () => {
+    it('should display the component', () => {
         // Arrange
         const propsD = {
             input: {
@@ -27,7 +27,7 @@ describe('text-field component spec', () => {
 
     });
 
-    xit('it should show the error', () => {
+    it('it should show the error', () => {
         // Arrange
         const propsDError = {
             input: {

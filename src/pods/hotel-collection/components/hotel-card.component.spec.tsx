@@ -16,16 +16,15 @@ describe('hotel card component test', () => {
             address: "calle solitaria",
     }
 
+        // Act
+        const { getByText } = render(<HotelCard hotel={hotel} />);
+        const elementName = getByText(hotel.name);
+        const elementDescription = getByText(hotel.description);
+        const elementRating =  getByText(hotel.rating.toString()); 
 
-// Act
-const { getByText } = render(<HotelCard hotel={hotel} />);
-const elementName = getByText(hotel.name);
-const elementDescription = getByText(hotel.description);
-const elementRating =  getByText(hotel.rating.toString()); 
-
-// Assert
-expect(elementName).toBeInTheDocument();
-expect(elementDescription).toBeInTheDocument();
-expect(elementRating).toBeInTheDocument();
+        // Assert
+        expect(elementName).toBeInTheDocument();
+        expect(elementDescription).toBeInTheDocument();
+        expect(elementRating).toBeInTheDocument();
     });
 });
