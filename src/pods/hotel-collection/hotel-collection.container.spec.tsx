@@ -2,8 +2,6 @@ import * as React from 'react';
 import { render, wait } from '@testing-library/react';
 import { HotelEntityVm } from './hotel-collection.vm';
 import { HotelCollectionContainer } from './hotel-collection.container';
-import * as api from './hotel-collection.api';
-import * as apiModel from './hotel-collection.api';
 import * as hook from './hotel-collection.hook';
 
 
