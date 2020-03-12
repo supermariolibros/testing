@@ -8,7 +8,7 @@
     "start:dev": "webpack-dev-server",
     "start:mock-server": "cd ./server && npm start",
     "postinstall": "cd ./server && npm i",
-    "test": "jest -c ./config/test/jest.json --verbose",
+    "test": "jest -c ./config/test/jest.json --verbose -i",
     "test:watch": "npm run test -- --watchAll -i",
     "pretest:coverage": "rimraf coverage",
     "test:coverage": "npm run test -- --coverage"

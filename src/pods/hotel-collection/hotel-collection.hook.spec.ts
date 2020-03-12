@@ -5,8 +5,8 @@ import * as apiModel from './hotel-collection.api';
 import * as viewModel from './hotel-collection.vm';
 import * as api from './hotel-collection.api';
 
-describe('hotel-collection test', () => {
-    it('When it is render the first time hotelCollection is empty', () => {
+describe('hotel-collection-hook test', () => {
+    it('When it is rendered the first time hotelCollection is empty', () => {
         // Act
         const { result } = renderHook(() => useHotelCollection());
         
@@ -15,7 +15,7 @@ describe('hotel-collection test', () => {
  
     });
 
-    it('description',  async () => {
+    it('It should render the proper hotel information',  async () => {
         // Arrange
         const hotel: apiModel.HotelEntityApi = {
             id: "123",
@@ -63,10 +63,10 @@ describe('hotel-collection test', () => {
             rating: 2.30,
             address: "calle solitaria",
     } 
-
+        const hotel1 = { id: "565", ...hotel}
         const getHotelCollectionSpy = jest
           .spyOn(api, 'getHotelCollection')
-              .mockResolvedValue([hotel, hotel]);
+              .mockResolvedValue([hotel, hotel1]);
 
 
         // Act
